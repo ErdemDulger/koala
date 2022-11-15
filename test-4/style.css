@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #558;
+    width: 100%;
+    height: 100vh;
+}
+body .hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .hover img{
+    position: absolute;
+    height: 250px;
+    z-index: 1;
+    transition: .4s ;
+}
+body .box-holder{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+body .box-holder .box2{
+    opacity: 0;
+    transition: .4s;
+    padding: 20px;
+    left:0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+body .box-holder .box2 h2,
+body .box-holder .box2 p,
+body .box-holder .box2 button{
+    opacity: 0;
+    transition: .1s;
+}
+body .box-holder .box2 h2{
+    font-size: 28px;
+}
+.main{
+    height: 400px;
+    width: 400px;
+}
+.hover:hover img{
+    height: 350px;
+}
+.hover:hover .box2{
+    opacity: 1;
+
+}
+.hover:hover .box-holder{
+    width: 600px;
+    height: 250px;
+    border-radius: 1.2rem;
+    transform: translateX(-150px);
+    background-color: rgba(248, 59, 59, 0.938);
+
+}
+.hover:hover .box2 h2{
+    opacity: 1;
+}
+.hover:hover .box2 p{
+    opacity: 1;
+}
+.hover:hover .box2 button{
+    opacity: 1;
+}
+.box2 button{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: white;
+    border-radius: 0.8rem;
+    
+}
