@@ -1,0 +1,125 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    padding: 0 5px;
+    list-style: none;
+    margin: 0;
+}
+header ul li a{
+    padding: 6px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size:1.3em;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    color: #2b1055;
+    background-color: #ffffff;
+}
+.section-1::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2b1055,transparent);
+    z-index: 1000;
+}
+.section-1{
+    position: relative;
+    width: 85%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-1 img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.section-1 h2{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    color: #ffffff;
+    font-size: 9vw;
+    white-space:nowrap;
+    z-index: 2;
+    right: -240px;
+}
+#mountain_b{
+    z-index: 0;
+}
+#moon{
+    mix-blend-mode: lighten;
+}
+#mountain_f{
+    z-index: 10;
+}
+#btn{
+    position: absolute;
+    text-decoration: none;
+    color: #2b1055;
+    padding: 8px 30px;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    transform: translateY(100px);
+    z-index: 3;
+
+}
+.section-2{
+    position: relative;
+    margin-top: 0;
+    background-color: #2b1055;
+    z-index: 2;
+    overflow-y: hidden;
+}
+.section-2 h2{
+    margin: 0;
+}
+
